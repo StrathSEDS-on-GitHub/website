@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -71,4 +74,77 @@ h1 {
 
 .count-particles {
   border-radius: 0 0 3px 3px;
+}
+
+#content-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#seds-logo {
+  max-width: 60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+#countdown {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+#countdown .counter {
+  font-family: 'Share Tech Mono';
+  text-transform: uppercase;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#countdown .counter span::before {
+  content: attr(b);
+  display: inline-block;
+}
+#countdown .counter span.ping::before {
+  -webkit-animation: pingEffect 0.4s 1 forwards;
+          animation: pingEffect 0.4s 1 forwards;
+}
+#countdown .counter b {
+  font-size: 14px;
+}
+@-webkit-keyframes pingEffect {
+  0% {
+    transform: scale(0.92);
+  }
+  10% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pingEffect {
+  0% {
+    transform: scale(0.92);
+  }
+  10% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
