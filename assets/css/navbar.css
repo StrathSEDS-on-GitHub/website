@@ -82,7 +82,7 @@
         display: block !important;
     }
 
-    #navbar-list:last-child {
+    #navbar-list li:last-of-type {
         margin-left: 0;
     }
 
