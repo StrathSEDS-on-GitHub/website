@@ -1,9 +1,4 @@
-li {
-    float: left;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-li a {
+#navbar-list li a {
     display: block;
     color: white !important;
     text-align: center;
@@ -11,34 +6,11 @@ li a {
     text-decoration: none;
 }
 
-li.avail {
-    display:none;
-    border-radius: 5px;
-    border: 1px solid #878787;
-    padding-top: 0.05rem;
-    padding-bottom: 0.05rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    background-color: #4949494b !important;
-    margin-left: auto;
-}
-@media screen and (min-width: 500px){
-    li.avail {
-        display:block;
-    }
-}
-
-li.avail a {
-    background-color: #49494900;
-    width: auto;
-    height: auto
-}
-
-li a:hover:not(.avail) {
+#navbar-list li a:hover:not(.navbar-no-hover) {
     border-bottom: 1px solid #fff;
 }
 
-ul {
+#navbar-list {
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0);
     margin: 0;
@@ -48,17 +20,27 @@ ul {
     font-size: 13px;
     display: flex;
     flex-direction: row;
-    flex-wrap: 10px;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 
-    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
-    backdrop-filter: blur(5px); /* Chrome and Opera */
-    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.09);
-    background-color: rgba(228, 228, 228, 0.052); 
+    /* -webkit-backdrop-filter: blur(8px);  Safari 9+
+    backdrop-filter: blur(5px); Chrome and Opera
+    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.09); */
 }
-  
-#jumbotron {
+
+#navbar-list :last-child {
+    margin-left: auto;
+}
+#social {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar-logo {
+    display: inline;
+    height: 50px;
+    margin-right: 10px;
 }

@@ -9,31 +9,56 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
-  <ul>
-      <li><a href="#about" class="active">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li class="avail"><a href="https://discord.gg/gTaT4d2">Join our Discord Server</a></li>
+  <ul id="navbar-list">
+    <li id="navbar-logo">
+      <a href="index.html" style="padding: 0;" class="navbar-no-hover"><img src="SEDS logo.png" alt="logo"
+          id="navbar-logo"></a>
+    </li>
+    <li><a href=" #about" class="active">About</a>
+    </li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <ul id="social">
+        <li><a href="https://www.facebook.com/strathseds"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/strathseds/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/strathseds/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+        <li><a href="https://github.com/StrathSEDS-on-GitHub/"><i class="fa fa-github" aria-hidden="true"></a></i></li>
+    </li>
+  </ul>
+  </li>
   </ul>
 </header>
 
 <body>
   <div id="content">
     <div id="content-inner">
-      <img id="seds-logo" src="./SEDS logo.png"/>
-      <div style="height: 50px;"></div>
-      <div id="countdown">
-        <div class="counter"><span b="--"></span><b>Days</b></div>
-        <div class="counter"><span b="--"></span><b>Hrs</b></div>
-        <div class="counter"><span b="--"></span><b>Min</b></div>
-        <div class="counter"><span b="--"></span><b>Sec</b></div>
-      </div>
+      <section id="jumbotron">
+        <div id="jumbotron-content">
+          <img id="seds-logo" src="./SEDS logo.png" />
+          <div id="branding-side">
+            <h1 id="tagline">Do you like space?</h1>
+            <p id="tagline-2">Because we do.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="bio">
+        <h2>Strathclyde's space society since 2011.</h2>
+        <p>
+          StrathSEDS runs events, workshops and talks about space. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Deleniti sit quos aliquam. Ullam dolorum incidunt quam, dicta vero at, quaerat minus similique mollitia
+          modi itaque voluptate perferendis. Dicta, repudiandae optio.
+        </p>
+      </section>
     </div>
   </div>
-  <div id="particles-js"></div> 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="index.js"></script>
 </body>
 
