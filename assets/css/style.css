@@ -54,7 +54,7 @@ h1 {
 }
 
 #jumbotron {
-  padding-top: 30vh;
+  padding-top: 20vh;
   height: 100vh;
   width: 100%;
 }
@@ -146,4 +146,18 @@ h1 {
     gap: 10px;
   }
 
+  #bio h2 {
+    font-size: 40px;
+  }
+  #bio p {
+    font-size: 15px;
+  }
+
+  #tagline {
+    font-size: 40px;
+  }
+
+  #tagline-2 {
+    font-size: 15px;
+  }
 }
