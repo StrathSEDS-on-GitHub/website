@@ -95,7 +95,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
 
-  background-image:  url('/assets/images/rocket.png'), linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(20,25,39,1) 85%);
+  background-image:  url('/assets/images/rocket.png'), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(20,25,39,1) 85%);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
