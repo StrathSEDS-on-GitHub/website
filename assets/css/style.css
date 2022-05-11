@@ -140,7 +140,7 @@ h1 {
 
 
 /* ---- media queries ---- */
-@media screen and (width < 900px) {
+@media screen and (max-width: 900px) {
   #jumbotron-content {
     flex-direction: column;
     gap: 10px;
