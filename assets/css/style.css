@@ -46,7 +46,7 @@ h1 {
 
 #seds-logo {
   max-width: 60%;
-  max-height: 300px;
+  max-height: 350px;
 }
 
 * {
@@ -54,7 +54,7 @@ h1 {
 }
 
 #jumbotron {
-  padding-top: 20vh;
+  padding-top: 30vh;
   height: 100vh;
   width: 100%;
 }
@@ -63,7 +63,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 50px;
+  gap: 0px;
   align-items: center;
 }
 
@@ -74,42 +74,13 @@ h1 {
 }
 
 #tagline {
-  font-size: 60px;
+  font-size: 75px;
   margin: 0;
 }
 
 #tagline-2 {
   font-size: 25px;
   margin-top: 10px;
-}
-
-@-webkit-keyframes pingEffect {
-  0% {
-    transform: scale(0.92);
-  }
-  10% {
-    opacity: 0.7;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pingEffect {
-  0% {
-    transform: scale(0.92);
-  }
-  10% {
-    opacity: 0.7;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 #bio {
@@ -138,9 +109,12 @@ h1 {
   max-width: 1000px;
 }
 
-
 /* ---- media queries ---- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  #jumbotron {
+    padding-top: 20vh;
+  }
+
   #jumbotron-content {
     flex-direction: column;
     gap: 10px;
@@ -154,10 +128,10 @@ h1 {
   }
 
   #tagline {
-    font-size: 40px;
+    font-size: 55px;
   }
 
   #tagline-2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 }

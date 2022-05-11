@@ -11,27 +11,27 @@
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<header>
+<header id="navbar">
+  <a href="index.html" style="padding: 0;" class="navbar-no-hover"><img src="SEDS logo.png" alt="logo"
+      id="navbar-logo"></a>
   <ul id="navbar-list">
-    <li id="navbar-logo">
-      <a href="index.html" style="padding: 0;" class="navbar-no-hover"><img src="SEDS logo.png" alt="logo"
-          id="navbar-logo"></a>
-    </li>
-    <li><a href=" #about" class="active">About</a>
-    </li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li>
+    <li class="nav-item"><a href="#about" class="active">About</a></li>
+    <li class="nav-item"><a href="#projects">Projects</a></li>
+    <li class="nav-item"><a href="#contact">Contact</a></li>
+    <li class="nav-item">
       <ul id="social">
         <li><a href="https://www.facebook.com/strathseds"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         <li><a href="https://www.instagram.com/strathseds/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/strathseds/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </li>
+        <li><a href="https://www.linkedin.com/company/strathseds/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         <li><a href="https://github.com/StrathSEDS-on-GitHub/"><i class="fa fa-github" aria-hidden="true"></a></i></li>
     </li>
   </ul>
   </li>
   </ul>
+
+  <a href="javascript:void(0);" id="nav-burger" onclick="toggleHamburgerMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
 </header>
 
 <body>
