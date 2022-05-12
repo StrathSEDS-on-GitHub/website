@@ -20,18 +20,7 @@ h1 {
   pointer-events: all;
 }
 
-#content {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none
-}
+#content {}
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -41,6 +30,8 @@ h1 {
   background-color: #141927;
   z-index: -1;
   overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
 #content-inner {
@@ -61,6 +52,7 @@ h1 {
   padding-top: 30vh;
   height: 100vh;
   width: 100%;
+  pointer-events: none;
 }
 
 #jumbotron-content {
@@ -69,6 +61,7 @@ h1 {
   flex-direction: row;
   gap: 0px;
   align-items: center;
+  pointer-events: all;
 }
 
 #branding-side {
@@ -87,6 +80,8 @@ h1 {
   margin-top: 10px;
 }
 
+/* -- section 2 -- */
+
 #bio {
   padding-left: 10%;
   padding-right: 10%;
@@ -95,14 +90,12 @@ h1 {
   flex-direction: column;
   justify-content: center;
 
-  background-image:  url('/assets/images/rocket.png'), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(20,25,39,1) 85%);
+  background-image: url('/assets/images/rocket.png'), linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(20, 25, 39, 1) 85%);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
 }
 
-
-/* -- section 2 -- */
 #bio h2 {
   font-size: 60px;
   max-width: 1000px;
@@ -112,6 +105,51 @@ h1 {
   font-size: 20px;
   max-width: 1000px;
 }
+
+/* -- section 3 -- */
+#money-pls {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url('/assets/images/pcb.png');
+  background-repeat: no-repeat;
+  background-position: 100px 70%;
+  background-size: 40%;
+}
+
+#money-pls::before {
+  z-index: -5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 80%);
+}
+
+#money-pls>* {
+  z-index: 10;
+}
+
+#money-pls h2 {
+  font-size: 60px;
+  max-width: 1000px;
+  margin-left: auto;
+}
+
+#money-pls p {
+  font-size: 20px;
+  max-width: 800px;
+  margin-left: auto;
+}
+
+
 
 /* ---- media queries ---- */
 @media screen and (max-width: 1000px) {
@@ -127,6 +165,7 @@ h1 {
   #bio h2 {
     font-size: 40px;
   }
+
   #bio p {
     font-size: 15px;
   }
@@ -137,5 +176,10 @@ h1 {
 
   #tagline-2 {
     font-size: 20px;
+  }
+
+  #money-pls {
+    background-size: 80%;
+    background-position: 0px 70%;
   }
 }
