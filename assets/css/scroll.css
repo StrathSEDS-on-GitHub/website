@@ -1,0 +1,26 @@
+.jumbo {
+  opacity: 0 !important;
+  transition: opacity .75s .2s ease-out;
+}
+
+.about {
+  opacity: 0 !important;
+  transition: opacity .75s .2s ease-in;
+}
+
+.support {
+  opacity: 0 !important;
+  transition: opacity .75s .2s ease-in;
+}
+
+.jumbo.is-visible{
+  opacity: 1 !important;
+}
+
+.about.is-visible{
+  opacity: 1 !important;
+}
+
+.support.is-visible{
+  opacity: 1 !important;
+}

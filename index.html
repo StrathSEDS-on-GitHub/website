@@ -5,26 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>StrathSEDS</title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/stars.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/scroll.css?vers=1">
+  <link rel="stylesheet" href="assets/css/style.css?ver=1">
+  <link rel="stylesheet" href="assets/css/navbar.css?ver=1">
+  <link rel="stylesheet" href="assets/css/stars.css?ver=1">
+  <link rel="stylesheet" href="assets/css/footer.css?ver=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header id="navbar">
-  <a href="index.html" style="padding: 0;" class="navbar-no-hover"><img src="SEDS logo.png" alt="logo"
+  <a href="index.html" style="padding: 0;" class="navbar-no-hover"><img src="./SEDS logo.png" alt="logo"
       id="navbar-logo"></a>
   <ul id="navbar-list">
     <li class="nav-item"><a href="#about" class="active">About</a></li>
+    <li class="nav-item"><a href="#support" class="active">Support</a></li>
     <li class="nav-item"><a href="#projects">Projects</a></li>
     <li class="nav-item"><a href="#contact">Contact</a></li>
     <li class="nav-item">
       <ul id="social">
         <li><a href="https://www.facebook.com/strathseds"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         <li><a href="https://www.instagram.com/strathseds/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/strathseds/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </li>
+        <li><a href="https://www.linkedin.com/company/strathseds/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         <li><a href="https://github.com/StrathSEDS-on-GitHub/"><i class="fa fa-github" aria-hidden="true"></a></i></li>
     </li>
   </ul>
@@ -37,9 +43,9 @@
 </header>
 
 <body>
-  <div id="content">
+  <div id="content show-on-scroll">
     <div id="content-inner">
-      <section id="jumbotron">
+      <section class="jumbo show-on-scroll" id="jumbotron">
         <div id="jumbotron-content">
           <img id="seds-logo" src="./SEDS logo.png" />
           <div id="branding-side">
@@ -49,18 +55,18 @@
         </div>
       </section>
 
-      <section id="bio">
-        <h2>Strathclyde's space society since 2011.</h2>
-        <p>
+      <section id="about">
+        <h2 class="about show-on-scroll">Strathclyde's space society since 2011.</h2>
+        <p class="about show-on-scroll">
           StrathSEDS runs events, workshops and talks about space. Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Deleniti sit quos aliquam. Ullam dolorum incidunt quam, dicta vero at, quaerat minus similique mollitia
           modi itaque voluptate perferendis. Dicta, repudiandae optio.
         </p>
       </section>
 
-      <section id="money-pls">
-        <h2>We need your support.</h2>
-        <p>
+      <section id="support">
+        <h2 class="support show-on-scroll">We need your support.</h2>
+        <p class="support show-on-scroll">
           StrathSEDS is entering Mach-22 this year and is are currently looking for sponsors to help us make it happen.
           <a href="https://www.gofundme.com/f/help-strathseds-enter-mach22">Help StrathSEDS enter Mach-22!</a>
         </p>
@@ -86,12 +92,21 @@
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
         </div>
+        <br>
+        <br>
+
       </section>
     </div>
   </div>
+
   <div id="particles-js"></div>
+
+  <div class="footer">
+      <p> StrathSEDS | Strathclyde's Space Exploration and Development in Space Society © 2022</p>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="index.js"></script>
+  <script src="./assets/js/showonscroll.js"></script>
 </body>
-
 </html>
