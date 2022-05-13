@@ -5,7 +5,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(30, 30, 30);
+    background-color: #111111;
     color: darkgrey;
     text-align: center;
     height: 10vh;
@@ -19,5 +19,4 @@
 .footer > p {
     margin:0;
     align-self: center;
-    
 }

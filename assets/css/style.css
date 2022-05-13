@@ -153,6 +153,69 @@ a {
   margin-left: auto;
 }
 
+/* -- section 4 -- */
+
+#projects {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url('/assets/images/cansat\ render\ cool.png'), radial-gradient(ellipse at top right, #1b2735 0%, #000000 80%);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+#projects h2 {
+  font-size: 60px;
+  max-width: 1000px;
+}
+
+#projects p {
+  font-size: 20px;
+  max-width: 1000px;
+}
+
+
+/* -- section 5 -- */
+
+#contact {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: radial-gradient(ellipse at bottom left, #1b2735 0%, #000000 80%);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+#contact h2 {
+  font-size: 60px;
+  max-width: 1000px;
+}
+
+#contact p {
+  font-size: 20px;
+  max-width: 1000px;
+}
+
+#contact a {
+  font-size: 16px;
+  color: white;
+  display: inline;
+}
+
+#contact-buttons > li > a {
+  color: white;
+}
+
 
 
 /* ---- media queries ---- */
