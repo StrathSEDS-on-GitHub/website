@@ -1,3 +1,5 @@
+console.log("I exist?");
+
 particlesJS("particles-js", {
     particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
