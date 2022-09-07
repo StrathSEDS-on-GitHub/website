@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #181a22;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#jumbotron {
+  min-height: 200vh;
+  width: 100%;
+  display: flex;
+  background: #181a22;
+  color: #fff;
+  flex-direction: row;
+}
+#jumbotron #jumbotron-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  transition: background-image 0.1s ease-in-out;
+}
+#jumbotron #jumbotron-sticky #jumbotron-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+#jumbotron #jumbotron-sticky #jumbotron-logo > img {
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 250px;
+  max-height: 250px;
+}
+#jumbotron #jumbotron-sticky h1 {
+  font-size: 80px;
+  padding: 0;
+  margin: 0;
+}
+#jumbotron #jumbotron-sticky h2 {
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+#jumbotron #jumbotron-label {
+  z-index: 100;
+  position: sticky;
+  margin-top: auto;
+  margin-left: auto;
+  padding: 10px;
+  margin-top: -100px;
+}
+#jumbotron #jumbotron-label > h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  text-align: right;
+}
+
+.section {
+  min-height: 100vh;
+  padding-left: 13%;
+  padding-right: 13%;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section > div > h1 {
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+.section > div > p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.section-content {
+  max-width: 750px;
+  height: 100%;
+}
+
+#about {
+  background-image: url("../assets/rocket.png"), radial-gradient(ellipse at top right, #1b2735 0%, #000000 80%);
+}
+
+a {
+  color: #58789b;
+  text-decoration: none;
+}
+
+#projects {
+  background-position: left;
+  background-image: url("../assets/cansat-render-cool.png"), radial-gradient(ellipse at bottom left, #1b2735 0%, #000000 80%);
+}
+#projects #project-text {
+  margin-left: auto;
+}
+
+#join {
+  background-position: right;
+  background-image: url("../assets/pcb.png");
+  background-size: 40%;
+  position: relative;
+}
+#join #project-text {
+  margin-left: auto;
+}
+
+#join::before {
+  z-index: -5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 80%);
+}
+
+.show-on-scroll {
+  opacity: 0 !important;
+  transition: opacity 0.75s 0.2s ease-out;
+}
+
+.show-on-scroll.is-visible {
+  opacity: 1 !important;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+#footer-content #footer-left {
+  margin-left: 20%;
+}
+#footer-content .social {
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  #jumbotron #jumbotron-sticky #jumbotron-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #jumbotron #jumbotron-sticky #jumbotron-content #jumbotron-logo {
+    margin-bottom: 20px;
+  }
+  #jumbotron #jumbotron-sticky #jumbotron-content h1 {
+    line-height: 1;
+    font-size: 60px;
+    padding: 20px;
+  }
+  #jumbotron #jumbotron-sticky #jumbotron-content h2 {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .section > div > h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+  }
+  .section > div > p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  #join {
+    background-size: 60%;
+  }
+  #footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer-content #footer-left {
+    margin-left: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  #footer-content .social {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
