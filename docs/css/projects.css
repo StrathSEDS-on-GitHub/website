@@ -1,21 +1,20 @@
 #header-projects {
-  min-height: 40vw;
   background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 80%);
 }
 
 #mach22 {
-  min-height: 40vw;
+  min-height: 40vh;
   background-image: url("/assets/rocket.png"), radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 80%);
   background-position: left;
 }
 
 #mach21 {
-  min-height: 40vw;
+  min-height: 40vh;
   background: radial-gradient(ellipse at top right, #1b2735 0%, #000000 80%);
 }
 
 #ukube1 {
-  min-height: 40vw;
+  min-height: 40vh;
   background: radial-gradient(ellipse at left, #1b2735 0%, #000000 80%);
 }
 
@@ -25,7 +24,7 @@
 }
 
 #nrc2014 {
-  min-height: 40vw;
+  min-height: 40vh;
   background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 80%);
 }
 
