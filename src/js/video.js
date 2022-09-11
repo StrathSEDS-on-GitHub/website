@@ -35,7 +35,6 @@ const main = () => {
     // }, false);
     // window.requestAnimationFrame(scrollPlay);
     let images = [];
-    let blobs = [];
 
     fetch("assets/launch.tar").then(response => {
         return response.arrayBuffer();
@@ -45,7 +44,6 @@ const main = () => {
             files.forEach((file) => {
                 let img = new Image();
                 img.src = file.getBlobUrl();
-                blobs.push(file.getBlobUrl());
                 images.push(img);
             });
         });

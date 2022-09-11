@@ -121,6 +121,7 @@ body {
 #about {
     background-image: url('../assets/rocket.png'), radial-gradient(ellipse at top right, #1b2735 0%, #000000 80%);
 }
+
 a {
     color: #58789b;
     text-decoration: none;
@@ -187,6 +188,10 @@ a {
         margin-right: 20%;
     }
 
+}
+
+:root {
+    color-scheme: dark;
 }
 
 //media queries 
