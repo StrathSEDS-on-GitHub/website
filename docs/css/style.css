@@ -220,10 +220,11 @@ a {
     padding: 10px;
     text-align: center;
   }
-  #footer-content .social {
+  #footer-content > .social {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    width: 125px;
   }
 }
 

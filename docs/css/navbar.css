@@ -133,5 +133,8 @@
     clip-path: circle(200vw at 120% -20%) !important;
   }
 }
+#strathunion-logo {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(10%) saturate(1679%) hue-rotate(171deg) brightness(94%) contrast(86%);
+}
 
 /*# sourceMappingURL=navbar.css.map */
