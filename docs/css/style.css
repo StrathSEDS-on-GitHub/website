@@ -182,6 +182,12 @@ a {
   color-scheme: dark;
 }
 
+.strathunion-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 600px) {
   #jumbotron #jumbotron-sticky #jumbotron-content {
     flex-direction: column;

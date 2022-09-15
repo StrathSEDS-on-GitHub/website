@@ -199,6 +199,12 @@ a {
     color-scheme: dark;
 }
 
+.strathunion-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //media queries 
 
 @media screen and (max-width: 600px) {
