@@ -78,6 +78,87 @@ body {
   text-align: right;
 }
 
+#twitch-plug {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 15;
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, #181a22 85%);
+  background-repeat: no-repeat;
+}
+
+#twitch-plug::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background: radial-gradient(ellipse at right, #2f1c4d 15%, rgba(0, 0, 0, 0) 65%);
+  background-repeat: no-repeat;
+}
+
+#twitch-plug::after {
+  content: "";
+  background-image: url("../assets/splash.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: ellipse(60% 35% at 70% 50%);
+  height: 100%;
+  z-index: -3;
+  filter: brightness(0.6);
+}
+
+#twitch-plug h2 {
+  font-size: 60px;
+  max-width: 1000px;
+}
+
+#twitch-plug p {
+  font-size: 20px;
+  max-width: 1000px;
+}
+
+#twitch-rect {
+  position: absolute;
+  height: 45%;
+  aspect-ratio: 16/9;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 25px;
+  z-index: -1;
+  background-color: #12121a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#twitch-rect > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+#twitch-icon-big {
+  font-size: 100px;
+  color: #9146FF;
+}
+
+.red {
+  color: red;
+}
+
 .section {
   min-height: 100vh;
   padding-left: 13%;
@@ -109,7 +190,7 @@ body {
 }
 
 #about {
-  background-image: url("../assets/rocket.png"), radial-gradient(ellipse at top right, #1b2735 0%, #000000 80%);
+  background-image: url("../assets/rocket.png"), radial-gradient(ellipse at right, #1b2735 0%, #000000 80%);
 }
 
 a {

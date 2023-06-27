@@ -1,39 +1,6 @@
 const main = () => {
     let playbackConst = 500;
     let setHeight = document.getElementById("jumbotron");
-    // let vid = document.getElementById('launch-video');      
-    // vid.load();
-
-    // // dynamically set the page height according to video length
-    // vid.addEventListener('loadedmetadata', function () {
-    //     console.log("set height to ", Math.floor(vid.duration) * playbackConst + "px");
-    //     setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-    // });
-
-    // let sameAsPrevious = 0;
-    // let previousPos = -1;
-    // // Use requestAnimationFrame for smooth playback
-    // function scrollPlay() {
-    //     var frameNumber = window.pageYOffset / playbackConst;
-    //     vid.currentTime = frameNumber;
-    //     previousPos = frameNumber;
-    //     if (previousPos == frameNumber) {
-    //         sameAsPrevious++;
-    //     }
-
-    //     if (sameAsPrevious < 10) {
-    //         window.requestAnimationFrame(scrollPlay);
-    //     } else {
-    //         sameAsPrevious = 0;
-    //     }
-
-    //     console.log(frameNumber);
-    // }
-
-    // window.addEventListener("scroll", () => {
-    //     window.requestAnimationFrame(scrollPlay);
-    // }, false);
-    // window.requestAnimationFrame(scrollPlay);
     let images = [];
 
     fetch("assets/launch.tar").then(response => {
@@ -52,10 +19,10 @@ const main = () => {
 
 
     let frame = () => {
-        if (images.length != 137) {
-            window.requestAnimationFrame(frame);
-            return;
-        }
+        // if (images.length != 137) {
+        //     window.requestAnimationFrame(frame);
+        //     return;
+        // }
         let scrolled = document.body.scrollTop;
         let jumboStart = jumbotron.offsetTop;
         let jumboEnd = jumbotron.offsetTop + jumbotron.offsetHeight;
