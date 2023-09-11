@@ -1,39 +1,6 @@
 const main = () => {
     let playbackConst = 500;
     let setHeight = document.getElementById("jumbotron");
-    // let vid = document.getElementById('launch-video');      
-    // vid.load();
-
-    // // dynamically set the page height according to video length
-    // vid.addEventListener('loadedmetadata', function () {
-    //     console.log("set height to ", Math.floor(vid.duration) * playbackConst + "px");
-    //     setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-    // });
-
-    // let sameAsPrevious = 0;
-    // let previousPos = -1;
-    // // Use requestAnimationFrame for smooth playback
-    // function scrollPlay() {
-    //     var frameNumber = window.pageYOffset / playbackConst;
-    //     vid.currentTime = frameNumber;
-    //     previousPos = frameNumber;
-    //     if (previousPos == frameNumber) {
-    //         sameAsPrevious++;
-    //     }
-
-    //     if (sameAsPrevious < 10) {
-    //         window.requestAnimationFrame(scrollPlay);
-    //     } else {
-    //         sameAsPrevious = 0;
-    //     }
-
-    //     console.log(frameNumber);
-    // }
-
-    // window.addEventListener("scroll", () => {
-    //     window.requestAnimationFrame(scrollPlay);
-    // }, false);
-    // window.requestAnimationFrame(scrollPlay);
     let images = [];
 
     fetch("assets/launch.tar").then(response => {
@@ -48,24 +15,32 @@ const main = () => {
             });
         });
 
-    let jumbotron = document.getElementById("jumbotron-sticky");
+    let jumbotronFront = document.getElementById("jumbotron-content-back");
+    let jumbotronBack = document.getElementById("jumbotron-content");
+    let jumbo = document.getElementById("jumbotron-sticky")
 
+    let next = jumbotronFront;
+    let other = jumbotronBack;
 
     let frame = () => {
-        if (images.length != 137) {
+        if (images.length != 300) {
             window.requestAnimationFrame(frame);
             return;
         }
         let scrolled = document.body.scrollTop;
-        let jumboStart = jumbotron.offsetTop;
-        let jumboEnd = jumbotron.offsetTop + jumbotron.offsetHeight;
+        let jumboStart = jumbo.offsetTop;
+        let jumboEnd = jumbo.offsetTop + jumbo.offsetHeight;
         let scrolledPastJumbo = (jumboStart - scrolled) / (jumboEnd - jumboStart);
         let currentFrame = Math.floor(scrolledPastJumbo * (images.length - 1));
         let img = images[currentFrame];
         img.decode().then(() => {
-            jumbotron.style.backgroundImage = `url(${img.src})`;
+            next.style.backgroundImage = `url(${img.src})`;
+            other.style.zIndex = 100;
+            next.style.zIndex = 1000;
         });
         window.requestAnimationFrame(frame);
+        next = next == jumbotronFront ? jumbotronBack : jumbotronFront; 
+        other = other == jumbotronFront ? jumbotronBack : jumbotronFront; 
     }
     window.requestAnimationFrame(frame);
 }
