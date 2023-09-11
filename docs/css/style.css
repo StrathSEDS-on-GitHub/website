@@ -38,6 +38,8 @@ body {
 }
 #jumbotron-content-back {
   background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   position: absolute;
   display: block;
   top:0;
@@ -54,6 +56,8 @@ body {
 }
 #jumbotron #jumbotron-sticky #jumbotron-content {
   background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   position: absolute;
   display: block;
   top:0;
@@ -294,6 +298,24 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  #jumbotron #jumbotron-sticky #jumbotron-content-back {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #jumbotron #jumbotron-sticky #jumbotron-content-back #jumbotron-logo {
+    margin-bottom: 20px;
+  }
+  #jumbotron #jumbotron-sticky #jumbotron-content-back h1 {
+    line-height: 1;
+    font-size: 60px;
+    padding: 20px;
+  }
+  #jumbotron #jumbotron-sticky #jumbotron-content-back h2 {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 20px;
+  }
   #jumbotron #jumbotron-sticky #jumbotron-content {
     flex-direction: column;
     align-items: center;
