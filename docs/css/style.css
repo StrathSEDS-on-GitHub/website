@@ -235,10 +235,21 @@ a {
 }
 
 #join {
+  position: relative;
+}
+#join::after {
   background-position: right;
   background-image: url("../assets/pcb.png");
   background-size: 40%;
-  position: relative;
+  filter: brightness(50%);
+  background-repeat: no-repeat;
+  z-index: -3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 #join #project-text {
   margin-left: auto;
@@ -253,6 +264,38 @@ a {
   width: 100%;
   height: 100%;
   background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 80%);
+}
+
+#sponsors {
+  position: relative;
+}
+#sponsors #sponsor-text {
+  margin-left: auto;
+}
+
+#sponsors::after {
+  z-index: -10;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-position: right;
+  background-image: url("../assets/sponsors.svg");
+  background-size: 50%;
+  filter: brightness(30%);
+}
+#sponsors::before {
+  z-index: -20;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 80%);
 }
 
 .show-on-scroll {
@@ -362,6 +405,10 @@ a {
     padding: 0;
     margin-bottom: 20px;
     width: 125px;
+  }
+
+  #sponsors::after {
+    background-size: contain;
   }
 }
 

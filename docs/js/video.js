@@ -1,9 +1,7 @@
 const main = () => {
-    let playbackConst = 500;
-    let setHeight = document.getElementById("jumbotron");
     let images = [];
 
-    fetch("assets/launch.tar").then(response => {
+    fetch("assets/launch2.tar").then(response => {
         return response.arrayBuffer();
     })
         .then(buffer => untar(buffer))
@@ -23,16 +21,17 @@ const main = () => {
     let other = jumbotronBack;
 
     let frame = () => {
-        if (images.length != 300) {
-            window.requestAnimationFrame(frame);
-            return;
-        }
         let scrolled = document.body.scrollTop;
         let jumboStart = jumbo.offsetTop;
         let jumboEnd = jumbo.offsetTop + jumbo.offsetHeight;
         let scrolledPastJumbo = (jumboStart - scrolled) / (jumboEnd - jumboStart);
         let currentFrame = Math.floor(scrolledPastJumbo * (images.length - 1));
         let img = images[currentFrame];
+        if (!img) {
+            // Wait for the image to load
+            requestAnimationFrame(frame);
+            return;
+        }
         img.decode().then(() => {
             next.style.backgroundImage = `url(${img.src})`;
             other.style.zIndex = 100;
