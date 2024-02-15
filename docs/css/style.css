@@ -200,6 +200,19 @@ body {
   justify-content: center;
 }
 
+.blog {
+  min-height: 45vh;
+  padding-left: 13%;
+  padding-right: 13%;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .section > div > h1 {
   font-size: 60px;
   padding: 0;
@@ -394,6 +407,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   #footer-content #footer-left {
     margin-left: 0;

@@ -12,9 +12,8 @@
 
 #navbar {
   font-family: "Hack", "Consolas", monospace;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 0;
-  padding: 15px;
   overflow: hidden;
   position: fixed;
   font-size: 16px;
@@ -23,6 +22,8 @@
   flex-direction: row;
   align-items: center;
   z-index: 100;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 #navbar-list {
@@ -31,13 +32,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  margin: 0;
   width: 100%;
-  margin-left: 20px;
-  /* -webkit-backdrop-filter: blur(8px);  Safari 9+
-  backdrop-filter: blur(5px); Chrome and Opera
-  box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.09); */
+  margin-left: 30px;
 }
 
 #navbar-list li:last-of-type {
@@ -54,16 +50,16 @@
 }
 
 .navbar-icon {
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 25px;
 }
 
 #navbar-logo {
   display: inline;
   height: 45px;
   position: absolute;
-  left: 10px;
-  top: 30px;
+  left: 20px;
+  top: 20px;
   z-index: 10000;
 }
 
