@@ -1,0 +1,24 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog {
+    margin-inline: 1vw;
+    max-width: 50rem;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.patch {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+}

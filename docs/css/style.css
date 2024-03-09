@@ -200,10 +200,16 @@ body {
   justify-content: center;
 }
 
+.blogcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
 .blog {
-  min-height: 45vh;
-  padding-left: 13%;
-  padding-right: 13%;
+  max-width: 50rem;
   color: white;
   background-repeat: no-repeat;
   background-position: right;
@@ -211,20 +217,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-  #blog {
-    padding-top: 15% !important;
-    padding-bottom: 5% !important;
-  }
-  #blogcontent {
-    padding-top: 10%;
-    padding-left: 0% !important;
-    padding-right: 0% !important;
-    padding-bottom: 0% !important;
-    text-align: justify;
-  }
+  text-align: justify;
 }
 
 #blogcontent {
@@ -362,6 +355,8 @@ a {
   width: 125px;
 }
 #footer-content > .social > li > a > #strathunion-logo {
+  height: 17px;
+  width: 17px;
   filter: brightness(0) saturate(100%) invert(46%) sepia(10%) saturate(1679%) hue-rotate(171deg) brightness(94%) contrast(86%);
 }
 
@@ -447,5 +442,3 @@ a {
     background-size: contain;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

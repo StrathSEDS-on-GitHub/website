@@ -1,4 +1,4 @@
-#navbar-list .nav-item a {
+#navbar-list > .nav-item a {
   display: block;
   color: white !important;
   text-align: center;
@@ -74,13 +74,10 @@
   right: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #navbar-list {
     flex-direction: column;
     width: 100%;
-  }
-  #navbar-list .nav-item {
-    display: none;
   }
   #nav-burger {
     display: block;
@@ -105,30 +102,22 @@
   #navbar-logo {
     top: 10px;
   }
-  #navbar::before {
-    content: "";
-    background: #121314;
-    clip-path: circle(0px at 100% 0%);
-    z-index: 1000;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100% !important;
+  #navbar.expanded-show-bg {
+    clip-path: rect(-90vw 150vw 140vw 0 round 500%) !important;
+  }
+  #navbar {
+    clip-path: rect(-50px 200vw 8vh -100px);
     transition: 0.4s linear;
   }
-  #navbar.expanded-show-bg::before {
-    clip-path: circle(200vw at 100% 0%) !important;
-    height: "100%" !important;
-  }
   #navbar-list {
-    background-color: #121314;
-    clip-path: circle(0px at 120% -20%);
+    margin-left: 0px;
+    padding-left: 0px;
+    clip-path: rect(-50px 200vw 0vh -100px);
     transition: 0.4s linear;
   }
   #navbar-list.expanded-show-bg {
-    clip-path: circle(200vw at 120% -20%) !important;
-        height: "100%" !important;
+    clip-path: rect(-90vw 150vw 140vw 0 round 500%) !important;
+    height: "100%" !important;
   }
 }
 

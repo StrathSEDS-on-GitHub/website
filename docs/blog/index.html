@@ -10,30 +10,30 @@
       content="Strathclyde's Space Society since 2011."
     />
     <meta name="author" content="StrathSEDS" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- CSS-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/navbar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/js-untar@2.0.0/build/dist/untar.js"></script>
-    <script src="js/video.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="../js/scroll.js"></script>
     <header id="navbar">
       <ul id="navbar-list">
         <li class="nav-item">
-          <a class="navbar-link" href="index.html#about">About</a>
+          <a class="navbar-link" href="../index.html#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-link" href="projects.html">Projects</a>
+          <a class="navbar-link" href="../projects.html">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-link" href="blog.html">Blog</a>
+          <a class="navbar-link" href=".">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-link" href="index.html#join">Contact</a>
+          <a class="navbar-link" href="../index.html#join">Contact</a>
         </li>
         <li class="nav-item">
           <ul class="social">
@@ -70,7 +70,7 @@
                 target="_blank"
                 ><img
                   class="navbar-icon"
-                  src="assets/strathunion.png"
+                  src="../assets/strathunion.png"
                   alt="StrathUnion Logo"
                   id="strathunion-logo"
               /></a>
@@ -80,14 +80,14 @@
       </ul>
       <a id="nav-burger" onclick="toggleHamburgerMenu()"
         ><i class="fa fa-bars"></i></a
-      ><a class="navbar-no-hover" href="index.html" style="padding: 0"
-        ><img src="assets/logo.png" alt="StrathSEDS Logo" id="navbar-logo"
+      ><a class="navbar-no-hover" href="../index.html" style="padding: 0"
+        ><img src="../assets/logo.png" alt="StrathSEDS Logo" id="navbar-logo"
       /></a>
     </header>
   </head>
 
-  <body>
-    <div id="content" style="padding-top: 5%">
+  <body style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100vh;">
+    <div id="content" style="padding-top: 100px;">
       <section class="blog" id="blog">
         <div>
           <a href="1.html" class="button" style="color: #fff">
@@ -99,10 +99,7 @@
             At StrathSEDS, we are looking to design and build a 2-stage rocket
             that will compete in the Mach-24 rocketry competition held in July.
             Our mission, 'Clyde-o-scope', will see our rocket, Strathosphere
-            III, lift off with a goal of reaching 3km. Not only are we competing
-            to achieve an altitude target, but the rocket will also be equipped
-            with a >1kg CanSat which is being designed to measure altitude using
-            the speed of ...
+            III, lift off with a goal of reaching 3km &hellip;
           </p>
 
           <br />
@@ -110,13 +107,15 @@
             href="1.html"
             class="button"
             style="
-              color: #fff;
-              background-color: #7979793b;
+              color: white;
+              background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 250%);
+              box-shadow: 0 0 30px 0.1px #181e24;
               display: block;
-              width: 33%;
-              padding: 0.5%;
+              min-width: 33%;
+              width: fit-content;
+              padding: 10px;
             "
-            >Read more ></a
+            >Read more &gt;</a
           >
         </div>
       </section>
@@ -157,7 +156,7 @@
               target="_blank"
               ><img
                 class="navbar-icon"
-                src="assets/strathunion.png"
+                src="../assets/strathunion.png"
                 alt="StrathUnion Logo"
                 id="strathunion-logo"
             /></a>
