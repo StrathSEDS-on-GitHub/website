@@ -35,6 +35,11 @@
   margin-left: 30px;
 }
 
+#navbar-list #strathunion-logo {
+  width: 17px;
+  height: 17px;
+}
+
 #navbar-list li:last-of-type {
   margin-left: auto;
 }
@@ -76,6 +81,7 @@
 
 @media screen and (max-width: 800px) {
   #navbar-list {
+    margin-top: 4rem;
     flex-direction: column;
     width: 100%;
   }
@@ -103,20 +109,24 @@
     top: 10px;
   }
   #navbar.expanded-show-bg {
-    clip-path: rect(-90vw 150vw 140vw 0 round 500%) !important;
+    clip-path: rect(-100vw 200vw 150vw -100px round 500%) !important;
+  }
+  #navbar.expanded-show-bg > li{
+    display: block;
   }
   #navbar {
-    clip-path: rect(-50px 200vw 8vh -100px);
-    transition: 0.4s linear;
+    clip-path: rect(-100vw 200vw 8vh -100px) ;
+    transition: 0.4s ease-in-out;
   }
   #navbar-list {
     margin-left: 0px;
     padding-left: 0px;
-    clip-path: rect(-50px 200vw 0vh -100px);
-    transition: 0.4s linear;
+    transition: 0.4s ease-in-out;
+  }
+  #navbar-list > li{
+    display: none;
   }
   #navbar-list.expanded-show-bg {
-    clip-path: rect(-90vw 150vw 140vw 0 round 500%) !important;
     height: "100%" !important;
   }
 }

@@ -1,4 +1,4 @@
-const main = () => {
+const main = async () => {
     let images = [];
 
     // Check if browser is mobile or desktop
@@ -10,17 +10,32 @@ const main = () => {
         console.log("Using desktop launch images")
     }
 
-    fetch("assets/" + file).then(response => {
-        return response.arrayBuffer();
-    })
-        .then(buffer => untar(buffer))
-        .then(files => {
-            files.forEach((file) => {
-                let img = new Image();
-                img.src = file.getBlobUrl();
-                images.push(img);
-            });
-        })
+    let resp = await fetch("assets/" + file);
+    let length = parseInt(resp.headers.get("Content-Length"));
+
+    let loaded = 0
+
+    resp = new Response(new ReadableStream({
+        async start(controller) {
+            const reader = resp.body.getReader();
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                loaded += value.byteLength;
+                document.getElementById("loading-bar").value = loaded / length * 100;
+                controller.enqueue(value);
+            }
+            controller.close();
+        }
+    }));
+
+    let files = await untar(await resp.arrayBuffer());
+    files.forEach((file) => {
+        let img = new Image();
+        img.src = file.getBlobUrl();
+        images.push(img);
+    });
 
     let jumbotronFront = document.getElementById("jumbotron-content-back");
     let jumbotronBack = document.getElementById("jumbotron-content");
