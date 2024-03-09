@@ -1,107 +1,169 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>StrathSEDS</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Strathclyde's Space Society since 2011.">
-    <meta name="author" content="StrathSEDS">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"><!-- CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Strathclyde's Space Society since 2011."
+    />
+    <meta name="author" content="StrathSEDS" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/js-untar@2.0.0/build/dist/untar.js"></script>
     <script src="js/video.js"></script>
     <script src="js/scroll.js"></script>
     <header id="navbar">
-        <ul id="navbar-list">
-            <li class="nav-item"><a class="navbar-link" href="index.html#about">About</a></li>
-            <li class="nav-item"><a class="navbar-link" href="projects.html">Projects</a></li>
-            <li class="nav-item"><a class="navbar-link" href="blog.html">Blog</a></li>
-            <li class="nav-item"><a class="navbar-link" href="index.html#join">Contact</a></li>
-            <li class="nav-item">
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/StrathSEDS/" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/StrathSEDS/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/StrathSEDS-on-GitHub/" target="_blank"><i
-                                class="fa-brands fa-github"> </i></a></li>
-                    <li><a href="https://discord.gg/WRrEaB9KK5" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                    </li>
-                    <li><a href="https://www.strathunion.com/groups/find-a-society/society/strathseds/"
-                            target="_blank"><img class="navbar-icon" src="assets/strathunion.png" alt="StrathUnion Logo"
-                                id="strathunion-logo"></a></li>
-                </ul>
+      <ul id="navbar-list">
+        <li class="nav-item">
+          <a class="navbar-link" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-link" href="index.html#join">Contact</a>
+        </li>
+        <li class="nav-item">
+          <ul class="social">
+            <li>
+              <a href="https://www.facebook.com/StrathSEDS/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
             </li>
-        </ul><a id="nav-burger" onclick="toggleHamburgerMenu()"><i class="fa fa-bars"></i></a><a class="navbar-no-hover"
-            href="index.html" style="padding: 0;"><img src="assets/logo.png" alt="StrathSEDS Logo" id="navbar-logo"></a>
+            <li>
+              <a href="https://www.instagram.com/StrathSEDS/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/StrathSEDS-on-GitHub/" target="_blank"
+                ><i class="fa-brands fa-github"> </i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/strathseds/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://discord.gg/WRrEaB9KK5" target="_blank"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.strathunion.com/groups/find-a-society/society/strathseds/"
+                target="_blank"
+                ><img
+                  class="navbar-icon"
+                  src="assets/strathunion.png"
+                  alt="StrathUnion Logo"
+                  id="strathunion-logo"
+              /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a id="nav-burger" onclick="toggleHamburgerMenu()"
+        ><i class="fa fa-bars"></i></a
+      ><a class="navbar-no-hover" href="index.html" style="padding: 0"
+        ><img src="assets/logo.png" alt="StrathSEDS Logo" id="navbar-logo"
+      /></a>
     </header>
-</head>
+  </head>
 
-<body>
-    <div id="content" style="padding-top: 5%;">
-        <section class="blog" id="blog">
+  <body>
+    <div id="content" style="padding-top: 5%">
+      <section class="blog" id="blog">
         <div>
-                <h1 class="show-on-scroll">StrathSEDS Update</h1>
-                <p style="color: #aaaa">15/02/2024 - by Sami</p>
-                <br>
-                <p class="show-on-scroll">
-                At StrathSEDS, we are looking to design and build a 2-stage rocket that will compete in the Mach-24 rocketry competition
-                held in July. Our mission, 'Clyde-o-scope', will see our rocket, Strathosphere III, lift off with a goal of reaching
-                3km. Not only are we competing to achieve an altitude target, but the rocket will also be equipped with a >1kg CanSat
-                which is being designed to measure altitude using the speed of ...</p>
+          <a href="1.html" class="button" style="color: #fff">
+            <h1 class="show-on-scroll">StrathSEDS Update</h1>
+          </a>
+          <p style="color: #aaaa">15/02/2024 - by Sami</p>
+          <br />
+          <p class="show-on-scroll">
+            At StrathSEDS, we are looking to design and build a 2-stage rocket
+            that will compete in the Mach-24 rocketry competition held in July.
+            Our mission, 'Clyde-o-scope', will see our rocket, Strathosphere
+            III, lift off with a goal of reaching 3km. Not only are we competing
+            to achieve an altitude target, but the rocket will also be equipped
+            with a >1kg CanSat which is being designed to measure altitude using
+            the speed of ...
+          </p>
 
-            <br>
-            <a href="blogupdate1.html" class="button" style="color: #fff;"><u>View more ></u></a>
-            
+          <br />
+          <a
+            href="1.html"
+            class="button"
+            style="
+              color: #fff;
+              background-color: #7979793b;
+              display: block;
+              width: 33%;
+              padding: 0.5%;
+            "
+            >Read more ></a
+          >
         </div>
-        </section>
-        <section class="blog" id="blog">
-            <div>
-                <h1 class="show-on-scroll">StrathSEDS Update</h1>
-                <p style="color: #aaaa">15/02/2024 - by Sami</p>
-                <br>
-                <p class="show-on-scroll">
-        
-                    At StrathSEDS, we are looking to design and build a 2-stage rocket that will compete in the Mach-24 rocketry
-                    competition
-                    held in July. Our mission, 'Clyde-o-scope', will see our rocket, Strathosphere III, lift off with a goal of
-                    reaching
-                    3km. Not only are we competing to achieve an altitude target, but the rocket will also be equipped with a
-                    >1kg CanSat
-                    which is being designed to measure altitude using the speed of ...</p>
-        
-                <br>
-                <a href="blog.html" class="button" style="color: #fff;"><u>View more ></u></a>
-        
-            </div>
-        </section>
+      </section>
     </div>
     <footer>
-        <div id="footer-content">
-            <div id="footer-left">
-                <p>© StrathSEDS 2024</p>
-                <p>Strathclyde Students for the Exploration and Development of Space</p>
-            </div>
-            <ul class="social">
-                <li><a href="https://www.facebook.com/StrathSEDS/" target="_blank"><i
-                            class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/StrathSEDS/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://github.com/StrathSEDS-on-GitHub/" target="_blank"><i class="fa-brands fa-github">
-                        </i></a></li>
-                <li><a href="https://discord.gg/WRrEaB9KK5" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                </li>
-                <li class="strathunion-logo-container"><a class="strathunion-logo-container"
-                        href="https://www.strathunion.com/groups/find-a-society/society/strathseds/"
-                        target="_blank"><img class="navbar-icon" src="assets/strathunion.png" alt="StrathUnion Logo"
-                            id="strathunion-logo"></a></li>
-            </ul>
+      <div id="footer-content">
+        <div id="footer-left">
+          <p>© StrathSEDS 2024</p>
+          <p>
+            Strathclyde Students for the Exploration and Development of Space
+          </p>
         </div>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/StrathSEDS/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/StrathSEDS/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/StrathSEDS-on-GitHub/" target="_blank"
+              ><i class="fa-brands fa-github"> </i
+            ></a>
+          </li>
+          <li>
+            <a href="https://discord.gg/WRrEaB9KK5" target="_blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+          </li>
+          <li class="strathunion-logo-container">
+            <a
+              class="strathunion-logo-container"
+              href="https://www.strathunion.com/groups/find-a-society/society/strathseds/"
+              target="_blank"
+              ><img
+                class="navbar-icon"
+                src="assets/strathunion.png"
+                alt="StrathUnion Logo"
+                id="strathunion-logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

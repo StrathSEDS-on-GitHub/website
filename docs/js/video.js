@@ -1,7 +1,16 @@
 const main = () => {
     let images = [];
 
-    fetch("assets/launch2.tar").then(response => {
+    // Check if browser is mobile or desktop
+    let file = "launch-horz.tar"
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        console.log("Using mobile launch images")
+        file = "launch-vert.tar"
+    } else {
+        console.log("Using desktop launch images")
+    }
+
+    fetch("assets/" + file).then(response => {
         return response.arrayBuffer();
     })
         .then(buffer => untar(buffer))
@@ -11,7 +20,7 @@ const main = () => {
                 img.src = file.getBlobUrl();
                 images.push(img);
             });
-        });
+        })
 
     let jumbotronFront = document.getElementById("jumbotron-content-back");
     let jumbotronBack = document.getElementById("jumbotron-content");
@@ -38,8 +47,8 @@ const main = () => {
             next.style.zIndex = 1000;
         });
         window.requestAnimationFrame(frame);
-        next = next == jumbotronFront ? jumbotronBack : jumbotronFront; 
-        other = other == jumbotronFront ? jumbotronBack : jumbotronFront; 
+        next = next == jumbotronFront ? jumbotronBack : jumbotronFront;
+        other = other == jumbotronFront ? jumbotronBack : jumbotronFront;
     }
     window.requestAnimationFrame(frame);
 }

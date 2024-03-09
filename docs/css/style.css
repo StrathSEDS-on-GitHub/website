@@ -213,6 +213,28 @@ body {
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  #blog {
+    padding-top: 15% !important;
+    padding-bottom: 5% !important;
+  }
+  #blogcontent {
+    padding-top: 10%;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    padding-bottom: 0% !important;
+    text-align: justify;
+  }
+}
+
+#blogcontent {
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  text-align: justify;
+}
+
 .section > div > h1 {
   font-size: 60px;
   padding: 0;
