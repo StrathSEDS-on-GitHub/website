@@ -29,6 +29,8 @@ const main = async () => {
                 controller.enqueue(value);
             }
             controller.close();
+
+            document.getElementById("jumbotron-label").classList.remove("hidden");
         }
     }));
 
