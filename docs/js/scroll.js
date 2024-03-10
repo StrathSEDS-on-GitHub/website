@@ -1,19 +1,13 @@
 // Smooth scroll functionality
-window.addEventListener('load', () => {
-    var elementsToShow = [...document.querySelectorAll('.show-on-scroll')];
-
-    var observer = new IntersectionObserver(entries => {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+        }
     });
-
-    elementsToShow.forEach(el => observer.observe(el));
-
 });
+document.querySelectorAll('.show-on-scroll').forEach(e => observer.observe(e));
 
 function toggleHamburgerMenu() {
     let nav = document.getElementById("navbar");
