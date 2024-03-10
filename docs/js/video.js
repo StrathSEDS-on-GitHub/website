@@ -11,7 +11,9 @@ const main = async () => {
     }
 
     let resp = await fetch("assets/" + file);
-    let length = parseInt(resp.headers.get("Content-Length"));
+
+    // GitHub Pages doesn't send Content-Length so we have to hardcode it
+    let length = file == "launch-horz.tar" ? 4055040 : 1464320;
 
     let loaded = 0
 
@@ -23,7 +25,7 @@ const main = async () => {
                 const { done, value } = await reader.read();
                 if (done) break;
                 loaded += value.byteLength;
-                document.getElementById("loading-bar").value = loaded / length * 100;
+                document.getElementById("loading-bar").value = Math.floor(loaded / length * 100);
                 controller.enqueue(value);
             }
             controller.close();
