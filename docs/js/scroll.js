@@ -1,9 +1,10 @@
 // Smooth scroll functionality
 const observer = new IntersectionObserver(entries => {
     entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
+        if (!entry.isIntersecting) {
+            entry.target.classList.add('not-visible');
+        } else {
+            entry.target.classList.remove('not-visible');
         }
     });
 });

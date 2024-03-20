@@ -362,12 +362,12 @@ a {
 }
 
 .show-on-scroll {
-  opacity: 0 !important;
+  opacity: 1 !important;
   transition: opacity 0.75s 0.1s ease-out;
 }
 
-.show-on-scroll.is-visible {
-  opacity: 1 !important;
+.show-on-scroll.not-visible{
+  opacity: 0 !important;
 }
 
 .hidden {
