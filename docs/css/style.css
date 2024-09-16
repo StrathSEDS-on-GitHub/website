@@ -429,6 +429,15 @@ a {
     padding: 20px;
     font-size: 20px;
   }
+  
+  #jumbotron #jumbotron-sticky #jumbotron-content-back p {
+    margin-top: 10px;
+    padding: 20px;
+  }
+  #jumbotron #jumbotron-sticky #jumbotron-content p {
+    margin-top: 10px;
+    padding: 20px;
+  }
   #jumbotron #jumbotron-sticky #jumbotron-content {
     flex-direction: column;
     align-items: center;
