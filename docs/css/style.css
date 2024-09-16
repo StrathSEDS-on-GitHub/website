@@ -451,6 +451,14 @@ a {
     font-size: 60px;
     padding: 20px;
   }
+  #freshers{
+    padding: 20px;
+  }
+
+  #jumbotron-label {
+    display: none;
+  }
+
   #jumbotron #jumbotron-sticky #jumbotron-content h2 {
     margin-top: 10px;
     padding: 20px;
