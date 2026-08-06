@@ -3,17 +3,65 @@
   padding-bottom: 50px;
   min-height: 50vh;
 }
-#header-projects {
-  background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 70%);
+
+.left {
+  text-align: left;
 }
 
-#mach23 {
+.right {
+  text-align: right;
+}
+
+#upcoming-projects {
+  background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 70%);
+  min-height: 20vh;
+  padding-bottom: 10px;
+}
+
+#olympus {
+  min-height: 40vh;
+}
+
+#header-projects {
+}
+
+#strathosphere-5 {
+  min-height: 40vh;
+}
+
+#strathosphere-4 {
   min-height: 40vh;
   background-image: radial-gradient(ellipse at left, #1b2735 0%, #000000 70%);
   position: relative;
   z-index: 3;
 }
-#mach23::after {
+#strathosphere-4::after {
+  background-image: url("../assets/strathosphere4.png");
+  transform: rotate(60deg);
+  background-size: contain;
+  background-position: left;
+  filter: brightness(70%);
+  background-repeat: no-repeat;
+  z-index: -3;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#strathosphere-3 {
+  min-height: 40vh;
+}
+
+#strathosphere-2 {
+  min-height: 40vh;
+  background-image: radial-gradient(ellipse at left, #1b2735 0%, #000000 70%);
+  position: relative;
+  z-index: 3;
+}
+#strathosphere-2::after {
   background-image: url("../assets/pcb.png");
   background-size: contain;
   background-position: right;
@@ -47,7 +95,6 @@
 
 #ukube1-text, #mach22-text {
   margin-left: auto;
-  text-align: right;
 }
 
 #nrc2014 {
