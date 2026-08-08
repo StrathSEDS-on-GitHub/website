@@ -13,12 +13,53 @@
 }
 
 #upcoming-projects {
-  background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 70%);
+  background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 70%);
   min-height: 20vh;
   padding-bottom: 10px;
 }
 
+#header-projects {
+  background: radial-gradient(ellipse at left, #1b2735 0%, #000000 70%);
+}
+
+#strathosphere-5 {
+    background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 70%);
+}
+
+#tracking-groundstation {
+    background: radial-gradient(ellipse at top right, #1b2735 0%, #000000 70%);
+}
+
+#testing-my-patience {
+    background: radial-gradient(ellipse at top right, #1b2735 0%, #000000 70%);
+}
+
+#firefly-ultra {
+    background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 70%);
+}
+
+#blaim {
+    background: radial-gradient(ellipse at bottom left, #1b2735 0%, #000000 70%);
+}
+
+#strathosphere-3 {
+    background: radial-gradient(ellipse at top left, #1b2735 0%, #000000 70%);
+}
+
+#shamanboard {
+  background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 70%);
+}
+
+#firefly-mini {
+    background: radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 70%);
+}
+
+#still-testing {
+    background: radial-gradient(ellipse at top right, #1b2735 0%, #000000 70%);
+}
+
 #olympus {
+  background: radial-gradient(ellipse at top right, #1b2735 0%, #000000 70%);
   min-height: 40vh;
 }
 
@@ -79,8 +120,13 @@
 
 #mach22 {
   min-height: 40vh;
-  background-image: url("../assets/rocket.png"), radial-gradient(ellipse at bottom right, #1b2735 0%, #000000 70%);
+  background-image: url("../assets/rocket.png"), radial-gradient(ellipse at top left, #1b2735 0%, #000000 70%);
   background-position: left;
+}
+
+#firefly-1 {
+
+  background: radial-gradient(ellipse at bottom left, #1b2735 0%, #000000 70%);
 }
 
 #mach21 {
@@ -91,6 +137,11 @@
 #ukube1 {
   min-height: 40vh;
   background: radial-gradient(ellipse at left, #1b2735 0%, #000000 70%);
+}
+
+#firefly-maxi {
+
+  background: radial-gradient(ellipse at right, #1b2735 0%, #000000 70%);
 }
 
 #ukube1-text, #mach22-text {
